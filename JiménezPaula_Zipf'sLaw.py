@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Feb  7 12:49:51 2026
 
-@author: pauli
-"""
 #IMPORTS#
 import en_core_web_sm  #FOR ENGLISH BASED TOKENIZATION
 import es_core_news_sm #FOR SPANISH BASED TOKENIZATION
@@ -36,7 +32,7 @@ print("English Top 10 most common words:", top10_ENG)
 suma_top = 0
 for word, freq in top10_ENG:
     suma_top = suma_top + len(word)
-promedio_topENG = suma_top / 10
+average_topENG = suma_top / 10
 
 #calculate average length of all words in text
 suma_total = 0
@@ -47,7 +43,7 @@ average_generalENG = suma_total / len(wordsENG)
 
 #print results
 print("Average total text ENGLISH:",average_generalENG)
-print("Average top 10 most frequent words ENGLISH:",promedio_topENG)
+print("Average top 10 most frequent words ENGLISH:",average_topENG)
 
 #--2 Spanish text--#
 
